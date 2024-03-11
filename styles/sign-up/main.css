@@ -1,0 +1,381 @@
+.logo-img {
+    height: 60px;
+    width: 60px;
+    margin-left: 23px;
+}
+
+.text-logo {
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 42px;
+    margin-left: 15px;
+    color: #34374C;
+}
+
+.text {
+    font-family: Outfit;
+    font-weight: 600;
+    color: #34374C;
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.password,
+.email {
+    font-family: Outfit;
+    font-size: 32px;
+    display: flex;
+    border: none;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #D9D9D9;
+    border-radius: 13px;
+    color: #34374C;
+    margin-bottom: 22px;
+}
+
+.confirm-password::placeholder,
+.password::placeholder,
+.email::placeholder{
+    color: #34374C;
+    opacity: 0.6;
+}
+
+.confirm-password:focus,
+.password:focus,
+.email:focus {
+    outline: 1.5px solid #34374C;
+}
+
+.confirm-password {
+    font-family: Outfit;
+    font-size: 32px;
+    display: flex;
+    border: none;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #D9D9D9;
+    border-radius: 13px;
+    color: #34374C;
+    margin-bottom: 40px;
+}
+
+.button-sign {
+    padding-left: 196px;
+    padding-right: 196px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 13px;
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 32px;
+    color: #D62C44;
+    background: none;
+    border: 2px solid;
+    border-color: #D62C44;
+    cursor: pointer;
+    transition-duration: 0.15s;
+}
+
+.button-sign:hover {
+    background-color: #D62C44;
+    color: #E5E5E5;
+}
+
+.button-sign:active {
+    opacity: 0.7;
+}
+
+.bottom-image-desktop,
+.bottom-image-laptop,
+.bottom-image-tablet,
+.bottom-image-mobile {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+
+#error_email,
+#error_password,
+#error_confirm_password {
+    font-family: Outfit;
+    color: #D62C44;
+    font-size: 20px;
+    margin-bottom: 8px;
+    width: 506px;
+}
+
+@media (min-width: 1200px) {
+    .logo-img {
+        height: 60px;
+        width: 60px;
+        margin-left: 23px;
+    }
+
+    .text-logo {
+        font-size: 42px;
+        margin-left: 15px;
+    }
+
+    .text {
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+
+    .password,
+    .email {
+        font-size: 32px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 22px;
+    }
+
+    .confirm-password {
+        font-size: 32px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 40px;
+    }
+
+    .button-sign {
+        padding-left: 196px;
+        padding-right: 196px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 32px;
+    }
+
+    .bottom-image-desktop {
+        display: block;
+    }
+
+    .bottom-image-laptop {
+        display: none;
+    }
+
+    .bottom-image-tablet {
+        display: none;
+    }
+
+    .bottom-image-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .logo-img {
+        height: 42px;
+        width: 42px;
+        margin-left: 20px;
+    }
+
+    .text-logo {
+        font-size: 30px;
+        margin-left: 12px;
+    }
+
+    .text {
+        font-size: 42px;
+        margin-bottom: 36px;
+    }
+
+    .password,
+    .email {
+        font-size: 26px;
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        margin-bottom: 22px;
+    }
+
+    .confirm-password {
+        font-size: 26px;
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        margin-bottom: 36px;
+    }
+
+    .button-sign {
+        padding-left: 161px;
+        padding-right: 162px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        font-size: 26px;
+    }
+
+    .bottom-image-desktop {
+        display: none;
+    }
+
+    .bottom-image-laptop {
+        display: block;
+    }
+
+    .bottom-image-tablet {
+        display: none;
+    }
+
+    .bottom-image-mobile {
+        display: none;
+    }
+
+    #error_email,
+    #error_password,
+    #error_confirm_password {
+        font-size: 18px;
+        margin-bottom: 7px;
+        width: 415px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 991px) {
+    .logo-img {
+        height: 36px;
+        width: 36px;
+        margin-left: 20px;
+    }
+
+    .text-logo {
+        font-size: 26px;
+        margin-left: 12px;
+    }
+
+    .text {
+        font-size: 36px;
+        margin-bottom: 33px;
+    }
+
+    .password,
+    .email {
+        font-size: 20px;
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        margin-bottom: 20px;
+    }
+
+    .confirm-password {
+        font-size: 20px;
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        margin-bottom: 33px;
+    }
+
+    .button-sign {
+        padding-left: 128px;
+        padding-right: 128px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        font-size: 20px;
+    }
+
+    .bottom-image-desktop {
+        display: none;
+    }
+
+    .bottom-image-laptop {
+        display: none;
+    }
+
+    .bottom-image-tablet {
+        display: block;
+    }
+
+    .bottom-image-mobile {
+        display: none;
+    }
+
+    #error_email,
+    #error_password,
+    #error_confirm_password {
+        font-size: 16px;
+        margin-bottom: 6px;
+        width: 328px;
+    }
+}
+
+@media (min-width: 310px) and (max-width: 479px) {
+    .logo-img {
+        height: 30px;
+        width: 30px;
+        margin-left: 10px;
+    }
+
+    .text-logo {
+        font-size: 14px;
+        margin-left: 8px;
+    }
+
+    .text {
+        font-size: 26px;
+        margin-bottom: 28px;
+    }
+
+    .password,
+    .email {
+        font-size: 18px;
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        margin-bottom: 18px;
+    }
+
+    .confirm-password {
+        font-size: 18px;
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        margin-bottom: 28px;
+    }
+
+    .button-sign {
+        padding-left: 117px;
+        padding-right: 118px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        font-size: 18px;
+    }
+
+    .bottom-image-desktop {
+        display: none;
+    }
+
+    .bottom-image-laptop {
+        display: none;
+    }
+
+    .bottom-image-tablet {
+        display: none;
+    }
+
+    .bottom-image-mobile {
+        display: block;
+    }
+
+    #error_email,
+    #error_password,
+    #error_confirm_password {
+        font-size: 14px;
+        margin-bottom: 5px;
+        width: 300px;
+    }
+}

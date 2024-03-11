@@ -1,0 +1,45 @@
+.first-line{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.second-line{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.third-line{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.last-line{
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+}
+
+.to-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+.footer {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}

@@ -1,0 +1,468 @@
+.logo-img {
+    width: 60px;
+    height: 60px;
+    margin-left: 29px;
+}
+
+.btn {
+    border: 1.3px solid;
+    border-color: #34374C;
+    color: #34374C;
+    border-radius: 8px;
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 42px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-right: 25px;
+    cursor: pointer;
+    transition-duration: 0.15s;
+}
+
+.btn:hover {
+    background-color: #34374C;
+    color: #E5E5E5;
+}
+
+.btn:active {
+    opacity: 0.7;
+}
+
+.text-bold{
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 70px;
+    color: #34374C;
+    text-align: center;
+    width: 1000px;
+}
+
+.text-under{
+    font-family: Outfit;
+    font-weight: 400;
+    font-size: 28px;
+    color: rgba(52,55,76,0.70);
+    text-align: center;
+    width: 750px;
+}
+
+.text-logo{
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 42px;
+    margin-left: 20px;
+    color: #34374C;
+}
+
+.button-sign{
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 18.4px;
+    padding-bottom: 18.4px;
+    text-align: center;
+    border: none;
+    border-radius: 13px;
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 58px;
+    color:#D62C44;
+    background: none;
+    border: 2px solid;
+    border-color: #D62C44;
+    cursor: pointer;
+    transition-duration: 0.15s;
+}
+
+.button-sign:hover{
+    background-color: #D62C44;
+    color: #E5E5E5;
+}
+
+.button-sign:active {
+    opacity: 0.7;
+}
+
+.button-log{
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 13px;
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 58px;
+    color: #D62C44;
+    background: none;
+    border: 2px solid;
+    border-color: #D62C44;
+    cursor: pointer;
+    transition-duration: 0.15s;
+}   
+
+.button-log:hover {
+    background-color: #D62C44;
+    color: #E5E5E5;
+}
+
+.button-log:active {
+    opacity: 0.7;
+}
+
+.bottom-image-desktop,
+.bottom-image-laptop,
+.bottom-image-tablet,
+.bottom-image-mobile {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Desktop-specific styles */
+@media (min-width: 1200px) {
+    .logo-img {
+        height: 60px;
+        width: 60px;
+        margin-left: 23px;
+    }
+
+    .text-logo {
+        font-size: 42px;
+        margin-left: 15px;
+    }
+
+    .btn {
+        font-size: 42px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-right: 25px;
+    }
+
+    .first-line {
+        margin-top: 20px;
+        margin-bottom: 110px;
+    }
+
+    .text-bold {
+        font-size: 50px;
+        width: 700px;
+    }
+
+    .text-under {
+        font-size: 24px;
+        width: 650px;
+    }
+
+    .second-line {
+        margin-bottom: 18px;
+    }
+
+    .third-line {
+        margin-bottom: 60px;
+    }
+
+    .button-sign {
+        padding-left: 38px;
+        padding-right: 38px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 44px;
+    }
+
+    .button-log {
+        padding-left: 54px;
+        padding-right: 54px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 44px;
+    }
+
+    .last-line {
+        gap: 80px;
+    }
+
+    .bottom-image-desktop {
+        display: block;
+    }
+
+    .bottom-image-laptop {
+        display: none;
+    }
+
+    .bottom-image-tablet {
+        display: none;
+    }
+
+    .bottom-image-mobile {
+        display: none;
+    }
+
+    .to-center {
+        height: 55vh;
+    }
+}
+
+/* Laptop-specific styles */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .logo-img {
+        height: 42px;
+        width: 42px;
+        margin-left: 20px;
+    }
+
+    .text-logo {
+        font-size: 30px;
+        margin-left: 12px;
+    }
+
+    .btn {
+        font-size: 30px;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        margin-right: 23px;
+    }
+
+    .first-line {
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+
+    .text-bold {
+        font-size: 40px;
+        width: 570px;
+    }
+
+    .text-under {
+        font-size: 18px;
+        width: 480px;
+    }
+
+    .second-line {
+        margin-bottom: 12px;
+    }
+
+    .third-line {
+        margin-bottom: 50px;
+    }
+
+    .button-sign {
+        padding-left: 36px;
+        padding-right: 36px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 40px;
+    }
+
+    .button-log {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 40px;
+    }
+
+    .last-line {
+        gap: 80px;
+    }
+
+    .bottom-image-desktop {
+        display: none;
+    }
+
+    .bottom-image-laptop {
+        display: block;
+    }
+
+    .bottom-image-tablet {
+        display: none;
+    }
+
+    .bottom-image-mobile {
+        display: none;
+    }
+
+    .to-center {
+        height: 55vh;
+    }
+}
+
+/* Tablet specific styles*/
+@media (min-width: 480px) and (max-width: 991px) {
+    .logo-img {
+        height: 36px;
+        width: 36px;
+        margin-left: 20px;
+    }
+
+    .text-logo {
+        font-size: 26px;
+        margin-left: 12px;
+    }
+
+    .btn {
+        font-size: 26px;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        margin-right: 23px;
+    }
+
+    .first-line {
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+    .text-bold {
+        font-size: 36px;
+        width: 550px;
+    }
+
+    .text-under {
+        font-size: 16px;
+        width: 430px;
+    }
+
+    .second-line {
+        margin-bottom: 10px;
+    }
+
+    .third-line {
+        margin-bottom: 50px;
+    }
+
+    .button-sign {
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 36px;
+    }
+
+    .button-log {
+        padding-left: 46px;
+        padding-right: 46px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 36px;
+    }
+
+    .last-line {
+        gap: 70px;
+    }
+
+    .bottom-image-desktop {
+        display: none;
+    }
+
+    .bottom-image-laptop {
+        display: none;
+    }
+
+    .bottom-image-tablet {
+        display: block;
+    }
+
+    .bottom-image-mobile {
+        display: none;
+    }
+
+    .to-center {
+        height: 60vh;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .logo-img {
+        height: 30px;
+        width: 30px;
+        margin-left: 10px;
+    }
+
+    .text-logo {
+        font-size: 20px;
+        margin-left: 8px;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        margin-right: 10px;
+        border: 1px solid;
+    }
+
+    .first-line {
+        margin-top: 20px;
+        margin-bottom: 160px;
+    }
+
+    .text-bold {
+        font-size: 24px;
+        width: 340px;
+    }
+
+    .text-under {
+        font-size: 12px;
+        width: 320px;
+    }
+
+    .second-line {
+        margin-bottom: 8px;
+    }
+
+    .third-line {
+        margin-bottom: 40px;
+    }
+
+    .button-sign {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 24px;
+        border: 1px solid;
+    }
+
+    .button-log {
+        padding-left: 34px;
+        padding-right: 34px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 24px;
+        border: 1px solid;
+    }
+
+    .last-line {
+        gap: 44px;
+    }
+
+    .bottom-image-desktop {
+        display: none;
+    }
+
+    .bottom-image-laptop {
+        display: none;
+    }
+
+    .bottom-image-tablet {
+        display: none;
+    }
+
+    .bottom-image-mobile {
+        display: block;
+    }
+
+    .to-center {
+        height: 45vh;
+    }
+}

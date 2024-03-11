@@ -1,0 +1,234 @@
+.logo-img {
+    height: 60px;
+    width: 60px;
+    margin-left: 23px;
+}
+
+.text-logo {
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 42px;
+    margin-left: 15px;
+    color: #34374C;
+}
+
+.account {
+    border: 1.3px solid;
+    border-color: #34374C;
+    color: #34374C;
+    border-radius: 8px;
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 42px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-right: 25px;
+    cursor: pointer;
+    transition-duration: 0.15s;
+}
+
+.account:hover {
+    background-color: #34374C;
+    color: #E5E5E5;
+}
+
+.account:active {
+    opacity: 0.7;
+}
+
+.bottom-image-desktop,
+.bottom-image-laptop,
+.bottom-image-tablet,
+.bottom-image-mobile {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+
+.addTaskBtn{
+    border: 1.3px solid;
+    border-color: #D62C44;
+    color: #D62C44;
+    background: none;
+    border-radius: 8px;
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 30px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-right: 25px;
+    cursor: pointer;
+    transition-duration: 0.15s;
+}
+
+.addTaskBtn:hover {
+    background-color: #D62C44;
+    color: #E5E5E5;
+}
+
+.addTaskBtn:active {
+    opacity: 0.7;
+}
+
+#form textarea{
+    background-color: #EFF0F3;
+    color: #34374C;
+    margin: 0px;
+    height: 18px;
+    width: 700px;
+    padding: 14px;
+    padding-left: 14px;
+    padding-bottom: 14px;
+    padding-top: 12px;
+    padding-bottom: 16px;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: rgb(165, 165, 165);
+    font-family: Outfit;
+    overflow-y: hidden;
+    max-height: 346px;
+}
+
+#form textarea:focus{
+    border-color: rgb(90, 90, 90);
+}
+
+#form textarea::-webkit-scrollbar{
+    width: 0px;
+}
+
+.addBtn{
+    border: 1.3px solid;
+    border-color: #D62C44;
+    color: #D62C44;
+    background: none;
+    border-radius: 8px;
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 22px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    cursor: pointer;
+    transition-duration: 0.15s;
+}
+
+.addBtn:hover {
+    background-color: #D62C44;
+    color: #E5E5E5;
+}
+
+.addBtn:active {
+    opacity: 0.7;
+}
+
+#closeTaskInput{
+    border: 1.3px solid;
+    border-color: #34374C;
+    color: #34374C;
+    background: none;
+    border-radius: 8px;
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 22px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    cursor: pointer;
+    transition-duration: 0.15s;
+}
+
+#closeTaskInput:hover {
+    background-color: #34374C;
+    color: #E5E5E5;
+}
+
+#closeTaskInput:active {
+    opacity: 0.7;
+}
+
+
+@media (min-width: 1200px) {
+    .bottom-image-desktop {
+        display: block;
+    }
+
+    .bottom-image-laptop {
+        display: none;
+    }
+
+    .bottom-image-tablet {
+        display: none;
+    }
+
+    .bottom-image-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .bottom-image-desktop {
+        display: none;
+    }
+
+    .bottom-image-laptop {
+        display: block;
+    }
+
+    .bottom-image-tablet {
+        display: none;
+    }
+
+    .bottom-image-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 991px) {
+
+    .bottom-image-desktop {
+        display: none;
+    }
+
+    .bottom-image-laptop {
+        display: none;
+    }
+
+    .bottom-image-tablet {
+        display: block;
+    }
+
+    .bottom-image-mobile {
+        display: none;
+    }
+}
+
+
+@media (min-width: 310px) and (max-width: 479px) {
+
+    .bottom-image-desktop {
+        display: none;
+    }
+
+    .bottom-image-laptop {
+        display: none;
+    }
+
+    .bottom-image-tablet {
+        display: none;
+    }
+
+    .bottom-image-mobile {
+        display: block;
+    }
+}
