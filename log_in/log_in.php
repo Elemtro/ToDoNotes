@@ -23,7 +23,6 @@
         </div>
 
         <div class="form-container" id="form">
-            <div style="display: block;">
                 <h1 class="text">Log in to your account below</h1>
                 <div class=middle-container>
                     <form action="#" method="POST" id=login-form>
@@ -36,7 +35,6 @@
                         <input type="submit" value="Log In" class="button-sign">
                     </form>
                 </div>
-            </div>
         </div>
     </div>
     <footer class="footer">
