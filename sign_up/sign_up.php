@@ -22,23 +22,20 @@
         </div>
 
         <div class="form-container" id="form">
-            <div style="display: block;">
-                <h1 class="text">Lets create your user account</h1>
-                <div class=middle-container>
-                    <form action="#" method="POST" id=signup-form>
+            <h1 class="text">Lets create your user account</h1>
+            <div class=middle-container>
+                <form action="#" method="POST" id=signup-form>
+                    <div id="error_email"></div>
+                    <input type="text" id="email" name="email" placeholder="Email" class="email">
 
-                        <div id="error_email"></div>
-                        <input type="text" id="email" name="email" placeholder="Email" class="email">
+                    <div id="error_password"></div>
+                    <input type="password" id="password" name="password" placeholder="Password" class="password">
 
-                        <div id="error_password"></div>
-                        <input type="password" id="password" name="password" placeholder="Password" class="password">
+                    <div id="error_confirm_password"></div>
+                    <input type="password" id="confirm-password" name="confirm" placeholder="Confirm Password" class="confirm-password">
 
-                        <div id="error_confirm_password"></div>
-                        <input type="password" id="confirm-password" name="confirm" placeholder="Confirm Password" class="confirm-password">
-
-                        <input type="submit" value="Sign Up" class="button-sign">
-                    </form>
-                </div>
+                    <input type="submit" value="Sign Up" class="button-sign">
+                </form>
             </div>
         </div>
     </div>

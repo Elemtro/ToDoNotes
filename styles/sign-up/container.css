@@ -1,19 +1,18 @@
 .form-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 75vh;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .first-line {
     margin-top: 20px;
     display: flex;
     align-items: center;
-}
-
-.middle-container{
-    display: flex;
-    justify-content: center;
 }
 
 .footer {

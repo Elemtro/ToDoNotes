@@ -1,3 +1,11 @@
+.middle-container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 160px;
+    padding-right: 160px;
+    box-sizing: border-box;
+}
+
 .logo-img {
     height: 60px;
     width: 60px;
@@ -19,22 +27,21 @@
     font-size: 48px;
     margin: 0;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .password,
 .email {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 22px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 13px;
+    background-color: #D9D9D9;
+    color: #34374C;
     font-family: Outfit;
     font-size: 32px;
-    display: flex;
-    border: none;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #D9D9D9;
-    border-radius: 13px;
-    color: #34374C;
-    margin-bottom: 22px;
 }
 
 .confirm-password::placeholder,
@@ -51,35 +58,29 @@
 }
 
 .confirm-password {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 32px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 13px;
+    background-color: #D9D9D9;
+    color: #34374C;
     font-family: Outfit;
     font-size: 32px;
-    display: flex;
-    border: none;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #D9D9D9;
-    border-radius: 13px;
-    color: #34374C;
-    margin-bottom: 40px;
 }
 
 .button-sign {
-    padding-left: 196px;
-    padding-right: 196px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    width: 100%;
+    padding: 11px;
     text-align: center;
-    border: none;
+    border: 2px solid #D62C44;
     border-radius: 13px;
+    background: none;
+    color: #D62C44;
     font-family: Outfit;
     font-weight: 600;
     font-size: 32px;
-    color: #D62C44;
-    background: none;
-    border: 2px solid;
-    border-color: #D62C44;
     cursor: pointer;
     transition-duration: 0.15s;
 }
@@ -132,28 +133,19 @@
     .password,
     .email {
         font-size: 32px;
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 11px;
         margin-bottom: 22px;
     }
 
     .confirm-password {
         font-size: 32px;
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-bottom: 40px;
+        padding: 11px;
+        margin-bottom: 32px;
     }
 
     .button-sign {
-        padding-left: 196px;
-        padding-right: 196px;
-        padding-top: 10px;
-        padding-bottom: 10px;
         font-size: 32px;
+        padding: 11px;
     }
 
     .bottom-image-desktop {
@@ -186,35 +178,26 @@
     }
 
     .text {
-        font-size: 42px;
-        margin-bottom: 36px;
+        font-size: 44px;
+        margin-bottom: 34px;
     }
 
     .password,
     .email {
         font-size: 26px;
-        padding-left: 22px;
-        padding-right: 22px;
-        padding-top: 9px;
-        padding-bottom: 9px;
-        margin-bottom: 22px;
+        padding: 11px;
+        margin-bottom: 18px;
     }
 
     .confirm-password {
         font-size: 26px;
-        padding-left: 22px;
-        padding-right: 22px;
-        padding-top: 9px;
-        padding-bottom: 9px;
-        margin-bottom: 36px;
+        padding: 11px;
+        margin-bottom: 28px;
     }
 
     .button-sign {
-        padding-left: 161px;
-        padding-right: 162px;
-        padding-top: 9px;
-        padding-bottom: 9px;
         font-size: 26px;
+        padding: 11px;
     }
 
     .bottom-image-desktop {
@@ -231,6 +214,11 @@
 
     .bottom-image-mobile {
         display: none;
+    }
+
+    .middle-container {
+        padding-left: 175px;
+        padding-right: 175px;
     }
 
     #error_email,
@@ -256,34 +244,31 @@
 
     .text {
         font-size: 36px;
-        margin-bottom: 33px;
+        margin-bottom: 32px;
     }
 
     .password,
     .email {
-        font-size: 20px;
-        padding-left: 22px;
-        padding-right: 22px;
-        padding-top: 9px;
-        padding-bottom: 9px;
-        margin-bottom: 20px;
+        font-size: 22px;
+        padding: 11px;
+        margin-bottom: 18px;
     }
 
     .confirm-password {
-        font-size: 20px;
-        padding-left: 22px;
-        padding-right: 22px;
-        padding-top: 9px;
-        padding-bottom: 9px;
-        margin-bottom: 33px;
+        font-size: 22px;
+        padding: 11px;
+        margin-bottom: 28px;
     }
 
     .button-sign {
-        padding-left: 128px;
-        padding-right: 128px;
-        padding-top: 9px;
-        padding-bottom: 9px;
-        font-size: 20px;
+        font-size: 22px;
+        padding: 11px;
+    }
+
+    .middle-container {
+        display: flex;
+        justify-content: center;
+        padding: 0;
     }
 
     .bottom-image-desktop {
@@ -325,34 +310,25 @@
 
     .text {
         font-size: 26px;
-        margin-bottom: 28px;
+        margin-bottom: 24px;
     }
 
     .password,
     .email {
-        font-size: 18px;
-        padding-left: 22px;
-        padding-right: 22px;
-        padding-top: 9px;
-        padding-bottom: 9px;
-        margin-bottom: 18px;
+        font-size: 16px;
+        padding: 11px;
+        margin-bottom: 16px;
     }
 
     .confirm-password {
-        font-size: 18px;
-        padding-left: 22px;
-        padding-right: 22px;
-        padding-top: 9px;
-        padding-bottom: 9px;
-        margin-bottom: 28px;
+        font-size: 16px;
+        padding: 11px;
+        margin-bottom: 26px;
     }
 
     .button-sign {
-        padding-left: 117px;
-        padding-right: 118px;
-        padding-top: 9px;
-        padding-bottom: 9px;
-        font-size: 18px;
+        font-size: 16px;
+        padding: 11px;
     }
 
     .bottom-image-desktop {
@@ -377,5 +353,11 @@
         font-size: 14px;
         margin-bottom: 5px;
         width: 300px;
+    }
+
+    .middle-container {
+        display: flex;
+        justify-content: center;
+        padding: 0;
     }
 }

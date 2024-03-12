@@ -1,8 +1,8 @@
 .middle-container {
     width: 100%;
     margin: 0 auto;
-    padding-left: 144px;
-    padding-right: 144px;
+    padding-left: 160px;
+    padding-right: 160px;
     box-sizing: border-box;
 }
 
@@ -43,14 +43,12 @@
     font-size: 32px;
 }
 
-.confirm-password::placeholder,
 .password::placeholder,
 .email::placeholder {
     color: #34374C;
     opacity: 0.6;
 }
 
-.confirm-password:focus,
 .password:focus,
 .email:focus {
     outline: 1.5px solid #34374C;
@@ -103,8 +101,7 @@
 }
 
 #error_email,
-#error_password,
-#error_confirm_password {
+#error_password {
     font-family: Outfit;
     color: #D62C44;
     font-size: 20px;
@@ -204,8 +201,7 @@
     }
 
     #error_email,
-    #error_password,
-    #error_confirm_password {
+    #error_password {
         font-size: 18px;
         margin-bottom: 7px;
         width: 100%;
@@ -267,7 +263,6 @@
         justify-content: center;
         padding: 0;
     }
-
 
     #error_email,
     #error_password,
