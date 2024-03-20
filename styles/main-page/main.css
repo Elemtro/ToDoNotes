@@ -92,8 +92,8 @@
     border-radius: 10px;
     border-color: rgb(165, 165, 165);
     font-family: Outfit;
-    overflow-y: hidden;
     max-height: 346px;
+    overflow-y: hidden;
 }
 
 #form textarea:focus{
@@ -101,7 +101,7 @@
 }
 
 #form textarea::-webkit-scrollbar{
-    width: 0px;
+    width: 2px;
 }
 
 .addBtn{

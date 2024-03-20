@@ -14,7 +14,6 @@ document.getElementById('login-form').addEventListener("submit", function(event)
     xhr.onload = function() {
         if (xhr.status == 200) {
             if (xhr.responseText.trim() !== "") {
-                console.log(xhr.responseText);
                 var response = JSON.parse(xhr.responseText);
                 handleResponse(response);
             } else {

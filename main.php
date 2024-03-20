@@ -21,6 +21,7 @@ if (!isset($_SESSION['user_id'])) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script defer src="addSendAjax.js"></script>
 </head>
 
 <body>
@@ -43,8 +44,8 @@ if (!isset($_SESSION['user_id'])) {
                     <button class="addTaskBtn">Add Task</button>
                 </div>
 
-                <div id="form" style="display: none;" >
-                    <textarea type="text" id="taskInput" rows="1"></textarea>
+                <div id="form" style="display: none;">
+                    <textarea type="text" id="taskInput" rows="1" maxlength="700"></textarea>
                     <div class="buttons">
                         <button id="closeTaskInput">Close</button>
                         <button type="submit" class="addBtn">Add Task</button>
