@@ -17,7 +17,7 @@ document.getElementById('form').addEventListener("submit", function(event) {
                 var response = JSON.parse(xhr.responseText);
                 handleResponse(response);
             } else {
-                console.log("No errors, cool");
+                location.reload();
             }
         }
     };
@@ -25,16 +25,12 @@ document.getElementById('form').addEventListener("submit", function(event) {
 
 function handleResponse(response) {
     // Clear previous error messages
-    document.getElementById("error_email").innerHTML = "";
-    document.getElementById("error_password").innerHTML = "";
+    document.getElementById("error").innerHTML = "";
 
     // Check for errors and display them
     if (response.hasOwnProperty("errors")) {
-        if (response.errors.hasOwnProperty("email")) {
-            document.getElementById("error_email").innerHTML = response.errors.email;
-        }
-        if (response.errors.hasOwnProperty("password")) {
-            document.getElementById("error_password").innerHTML = response.errors.password;
+        if (response.errors.hasOwnProperty('taskInput')) {
+            document.getElementById("error").innerHTML = response.errors.taskInput;
         }
     }
 }

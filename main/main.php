@@ -1,5 +1,5 @@
 <?php
-    include_once "fetch_notes.php";
+include_once "session_set.php";
 ?>
 
 <!DOCTYPE html>
@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <script defer src="addSendAjax.js"></script>
+    <script defer src="fetchDisplay.js"></script>
 </head>
 
 <body>
@@ -31,6 +32,9 @@
                 </button>
             </a>
         </div>
+        <div id="notesContainer">
+            <!-- Fetched notes will be displayed here -->
+        </div>
 
         <div class="to-center">
             <div style="display:flex;">
@@ -39,6 +43,7 @@
                 </div>
 
                 <form id="form" action="#" method="POST" style="display: none;">
+                    <div id="error"></div>
                     <textarea type="text" name="taskInput" id="taskInput" rows="1" maxlength="700"></textarea>
                     <div class="buttons">
                         <button id="closeTaskInput" type="button">Close</button>
