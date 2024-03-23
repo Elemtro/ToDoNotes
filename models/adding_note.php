@@ -1,15 +1,19 @@
 <?php
-
 $errors = array();
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     include 'db_connection.php';
 
-    $text = htmlspecialchars($_POST["text"]);
+    // Check if "taskInput" key exists in $_POST array
+    if (isset($_POST["taskInput"])) {
+        $text = htmlspecialchars($_POST["taskInput"]);
 
-    // validate email
-    if (empty($text)) {
-        $errors['text'] = 'Field is empty';
+        // validate input
+        if (empty($text)) {
+            $errors['taskInput'] = 'Field is empty';
+        }
+    } else {
+        $errors['taskInput'] = 'Input field is not set'; // Handle case where taskInput is not set
     }
 
     session_start();

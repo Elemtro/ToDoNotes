@@ -18,7 +18,7 @@ document.getElementById('login-form').addEventListener("submit", function(event)
                 handleResponse(response);
             } else {
                 console.log("No errors, cool");
-                window.location.href = "../main.php";
+                window.location.href = "../main/main.php";
             }
         }
     };

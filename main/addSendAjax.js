@@ -5,7 +5,7 @@ document.getElementById('form').addEventListener("submit", function(event) {
 
     // Send form data using AJAX
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "models/adding_note.php", true);
+    xhr.open("POST", "../models/adding_note.php", true);
     xhr.onerror = function() {
         console.error("Error submitting form");
     };
