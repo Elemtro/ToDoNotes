@@ -25,6 +25,33 @@ window.onload = function() {
                 dateDiv.textContent = date;
                 dateDiv.className = 'note-date';
                 noteDiv.appendChild(dateDiv);
+
+                               // Create buttons container
+                let buttonsDiv = document.createElement('div');
+                buttonsDiv.className = 'note-buttons';
+
+                // Create Edit button
+                let editButton = document.createElement('button');
+                editButton.textContent = 'Edit';
+                editButton.className = 'note-button edit-button';
+                editButton.onclick = function() {
+                    // Add functionality for editing a note here
+                    console.log('Edit button clicked for note ' + note.note_id);
+                };
+                buttonsDiv.appendChild(editButton);
+
+                // Create Delete button
+                let deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.className = 'note-button delete-button';
+                deleteButton.onclick = function() {
+                    // Add functionality for deleting a note here
+                    console.log('Delete button clicked for note ' + note.note_id);
+                };
+                buttonsDiv.appendChild(deleteButton);
+
+                // Append buttons container to the note container
+                noteDiv.appendChild(buttonsDiv);
                 
                 // Append the note container to the notes container
                 notesContainer.appendChild(noteDiv);

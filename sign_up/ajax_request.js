@@ -22,7 +22,6 @@ document.getElementById("signup-form").addEventListener("submit", function(event
                         window.location.href = "../index.php?signup_success=true";
                     }
                     // If request is successful, handle the response
-
                 }
             };
         });

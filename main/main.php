@@ -22,18 +22,17 @@ include_once "session_set.php";
 <body>
     <div class="page">
         <div class="first-line">
-            <div class="logo">
-                <img src="../images/ToDoNotes_icon.png" alt="logotype" class="logo-img">
-                <span class="text-logo">ToDoNotes</span>
-            </div>
+            <a href="../index.php" style="text-decoration:none">
+                <div class="logo">
+                    <img src="../images/ToDoNotes_icon.png" alt="logotype" class="logo-img">
+                    <span class="text-logo">ToDoNotes</span>
+                </div>
+            </a>
             <a href="">
                 <button class="account">
                     Account
                 </button>
             </a>
-        </div>
-        <div id="notesContainer">
-            <!-- Fetched notes will be displayed here -->
         </div>
 
         <div class="to-center">
@@ -51,6 +50,10 @@ include_once "session_set.php";
                     </div>
                 </form>
             </div>
+        </div>
+
+        <div id="notesContainer">
+            <!-- Fetched notes will be displayed here -->
         </div>
     </div>
 

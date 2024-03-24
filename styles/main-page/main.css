@@ -73,17 +73,15 @@
     opacity: 0.7;
 }
 
+
 #form textarea{
     background-color: #EFF0F3;
     color: #34374C;
     margin: 0px;
-    height: 18px;
-    width: 700px;
-    padding: 14px;
+    padding-right: 14px;
     padding-left: 14px;
-    padding-bottom: 14px;
-    padding-top: 12px;
-    padding-bottom: 16px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     outline: none;
     resize: none;
     font-size: 18px;
@@ -91,8 +89,9 @@
     border-radius: 10px;
     border-color: rgb(165, 165, 165);
     font-family: Outfit;
-    max-height: 346px;
+    max-height: 345px;
     overflow-y: hidden;
+    width: 1071px;
 }
 
 #form textarea:focus{
@@ -167,9 +166,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
-    margin-top: 20px;
-    max-width: 1000px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -178,16 +175,16 @@
     background-color: #FFFFFF;
     border-radius: 8px;
     padding: 15px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1 1 200px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    flex: 1 1 225px;
     /* Each note occupies at least 200px width */
-    min-width: 200px;
+    min-width: 225px;
 }
 
 .note-content {
     font-family: 'Outfit', sans-serif;
     color: #34374C;
-    font-size: 18px;
+    font-size: 16px;
     word-wrap: break-word;
 }
 
@@ -198,6 +195,31 @@
     margin-top: 8px;
 }
 
+.note-buttons {
+    display: flex;
+    justify-content: start;
+    margin-top: 14px;
+}
+
+.note-button {
+    background-color: #D62C44;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.note-button:hover {
+    background-color: #B51B31;
+}
+
+.edit-button {
+    margin-right: 10px; /* Adjust spacing between buttons if needed */
+}
 
 @media (min-width: 1200px) {
     .bottom-image-desktop {
