@@ -21,7 +21,8 @@ window.onload = function() {
                 noteDiv.appendChild(contentDiv);
                 
                 let dateDiv = document.createElement('div');
-                dateDiv.textContent = 'Date: ' + note.date;
+                let date = dateFormatting(note.date)
+                dateDiv.textContent = date;
                 dateDiv.className = 'note-date';
                 noteDiv.appendChild(dateDiv);
                 
@@ -37,3 +38,30 @@ window.onload = function() {
     };
     xhr.send();
 };
+
+function dateFormatting(date) {
+    let timestamp = new Date(date);
+
+    // Get day, month, and year
+    let day = timestamp.getDate();
+    let month = timestamp.toLocaleString('default', { month: 'short' });
+    let year = timestamp.getFullYear();
+    let dayOfWeek = timestamp.toLocaleString('default', { weekday: 'long' });
+
+    let currentDate = new Date();
+    let currentDay = currentDate.getDate();
+    let currentMonth = currentDate.getMonth();
+    let currentYear = currentDate.getFullYear();
+
+    let isToday = (day === currentDay && month === currentDate.toLocaleString('default', { month: 'short' }) && year === currentYear);
+
+    let formattedDate = '';
+    if (isToday == true) {
+        formattedDate = `${day} ${month} ‧ Today ‧ ${dayOfWeek}`;
+    }
+    else {
+        formattedDate = `${day} ${month} ‧ ${dayOfWeek}`;
+    }
+    return formattedDate;
+}
+
