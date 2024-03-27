@@ -20,6 +20,21 @@ window.onload = function() {
                 contentDiv.className = 'note-content';
                 noteDiv.appendChild(contentDiv);
                 
+                setTimeout(function() {
+                    if (note.data.length > 120) {
+                        contentDiv.addEventListener('click', function() {
+                            alert(note.data); // Replace with your custom popup implementation
+                    })
+                    } else if (contentDiv.scrollHeight > 120) {
+                        contentDiv.addEventListener('click', function() {
+                            alert(note.data); // Show full content in a popup
+                        });
+                    }
+                }, 0);
+                
+                // Append contentDiv to noteDiv
+                noteDiv.appendChild(contentDiv);
+
                 let dateDiv = document.createElement('div');
                 let date = dateFormatting(note.date)
                 dateDiv.textContent = date;
