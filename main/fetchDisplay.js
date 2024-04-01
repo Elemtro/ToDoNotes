@@ -18,30 +18,37 @@ window.onload = function() {
                 let contentDiv = document.createElement('div');
                 contentDiv.innerHTML = note.data.replace(/\n/g, '<br>');
                 contentDiv.className = 'note-content';
-                noteDiv.appendChild(contentDiv);
                 
                 setTimeout(function() {
                     if (note.data.length > 120) {
-                        contentDiv.addEventListener('click', function() {
-                            alert(note.data); // Replace with your custom popup implementation
-                    })
+                        createPopup(contentDiv.innerHTML, note.note_id)
+                        contentDiv.addEventListener('click', () => {
+                            setupPopup(note.note_id);
+                        });
                     } else if (contentDiv.scrollHeight > 120) {
-                        contentDiv.addEventListener('click', function() {
-                            alert(note.data); // Show full content in a popup
+                        createPopup(contentDiv.innerHTML, note.note_id)
+                        contentDiv.addEventListener('click', () => {
+                            setupPopup(note.note_id);
                         });
                     }
                 }, 0);
                 
+                
                 // Append contentDiv to noteDiv
                 noteDiv.appendChild(contentDiv);
 
+                // Create a container for buttons and date
+                let bottomContainer = document.createElement('div');
+                bottomContainer.className = 'bottom-container';
+
+                // Create date
                 let dateDiv = document.createElement('div');
                 let date = dateFormatting(note.date)
                 dateDiv.textContent = date;
                 dateDiv.className = 'note-date';
-                noteDiv.appendChild(dateDiv);
+                //noteDiv.appendChild(dateDiv);
 
-                               // Create buttons container
+                // Create buttons container
                 let buttonsDiv = document.createElement('div');
                 buttonsDiv.className = 'note-buttons';
 
@@ -65,8 +72,14 @@ window.onload = function() {
                 };
                 buttonsDiv.appendChild(deleteButton);
 
+
+                bottomContainer.appendChild(dateDiv);
+                bottomContainer.appendChild(buttonsDiv);
+
+
                 // Append buttons container to the note container
-                noteDiv.appendChild(buttonsDiv);
+                //noteDiv.appendChild(buttonsDiv);
+                noteDiv.appendChild(bottomContainer);
                 
                 // Append the note container to the notes container
                 notesContainer.appendChild(noteDiv);
@@ -107,3 +120,40 @@ function dateFormatting(date) {
     return formattedDate;
 }
 
+// Function to create the popup structure
+function createPopup(content, id) {
+    // Access popup container
+    let popupContainer = document.getElementById('popupsContainer');
+
+    //Create popup
+    let popup = document.createElement('div');
+    popup.className = 'popup';
+    popup.id = 'pop' + id;
+    // Create overlay and put it inside popup div
+    let overlayDiv = document.createElement('div');
+    overlayDiv.className = 'overlay';
+    popup.appendChild(overlayDiv);
+
+    // Create popup content container
+    let popupContent = document.createElement('div');
+    popupContent.className = "popupContent";
+
+    // Create popup content
+    let contentDiv = document.createElement('div');
+    contentDiv.className = 'content';
+    contentDiv.innerHTML = content;
+    popupContent.appendChild(contentDiv);
+
+    popup.appendChild(popupContent);
+    popupContainer.appendChild(popup);
+}
+
+function setupPopup(id) {
+    let popup = document.getElementById("pop" + id);
+    popup.classList.add("active");
+    
+    let overlay = popup.querySelector('.overlay');
+    overlay.addEventListener("click", function() {
+        popup.classList.remove("active");
+    });
+}

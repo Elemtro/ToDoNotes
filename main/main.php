@@ -56,6 +56,10 @@ include_once "session_set.php";
         <div id="notesContainer">
             <!-- Fetched notes will be displayed here -->
         </div>
+
+        <div id="popupsContainer">
+
+        </div>
     </div>
 
 
