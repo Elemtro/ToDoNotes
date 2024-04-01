@@ -280,7 +280,19 @@
     -webkit-line-clamp: 4;
     /* number of lines to show */
     -webkit-box-orient: vertical;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    padding-left: 4px;
+        /* Add padding inside the element */
 }
+
+
+/* .note-content:hover { */
+    /* Define hover styles here */
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+    /* Example background color change */
+/*} */
+
 
 .note-date {
     font-family: "IBM Plex Sans", sans-serif;

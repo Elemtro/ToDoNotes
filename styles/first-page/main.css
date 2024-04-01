@@ -9,8 +9,8 @@
     border-color: #34374C;
     color: #34374C;
     border-radius: 8px;
-    font-family: Outfit;
-    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
     font-size: 42px;
     padding-left: 18px;
     padding-right: 18px;
@@ -31,17 +31,17 @@
 }
 
 .text-bold{
-    font-family: Outfit;
-    font-weight: 600;
-    font-size: 70px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
     color: #34374C;
     text-align: center;
     width: 1000px;
 }
 
 .text-under{
-    font-family: Outfit;
-    font-weight: 400;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
     font-size: 28px;
     color: rgba(52,55,76,0.70);
     text-align: center;
@@ -49,8 +49,8 @@
 }
 
 .text-logo{
-    font-family: Outfit;
-    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
     font-size: 42px;
     margin-left: 20px;
     color: #34374C;
@@ -64,8 +64,8 @@
     text-align: center;
     border: none;
     border-radius: 13px;
-    font-family: Outfit;
-    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
     font-size: 58px;
     color:#D62C44;
     background: none;
@@ -92,8 +92,8 @@
     text-align: center;
     border: none;
     border-radius: 13px;
-    font-family: Outfit;
-    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
     font-size: 58px;
     color: #D62C44;
     background: none;
@@ -149,8 +149,8 @@
     }
 
     .text-bold {
-        font-size: 50px;
-        width: 700px;
+        font-size: 48px;
+        width: 750px;
     }
 
     .text-under {
@@ -171,7 +171,7 @@
         padding-right: 38px;
         padding-top: 16px;
         padding-bottom: 16px;
-        font-size: 44px;
+        font-size: 42px;
     }
 
     .button-log {
@@ -179,11 +179,11 @@
         padding-right: 54px;
         padding-top: 16px;
         padding-bottom: 16px;
-        font-size: 44px;
+        font-size: 42px;
     }
 
     .last-line {
-        gap: 80px;
+        gap: 98px;
     }
 
     .bottom-image-desktop {
@@ -236,20 +236,20 @@
 
     .text-bold {
         font-size: 40px;
-        width: 570px;
+        width: 600px;
     }
 
     .text-under {
         font-size: 18px;
-        width: 480px;
+        width: 500px;
     }
 
     .second-line {
-        margin-bottom: 12px;
+        margin-bottom: 16px;
     }
 
     .third-line {
-        margin-bottom: 50px;
+        margin-bottom: 44px;
     }
 
     .button-sign {
@@ -257,7 +257,7 @@
         padding-right: 36px;
         padding-top: 15px;
         padding-bottom: 15px;
-        font-size: 40px;
+        font-size: 36px;
     }
 
     .button-log {
@@ -265,11 +265,11 @@
         padding-right: 50px;
         padding-top: 15px;
         padding-bottom: 15px;
-        font-size: 40px;
+        font-size: 36px;
     }
 
     .last-line {
-        gap: 80px;
+        gap: 74px;
     }
 
     .bottom-image-desktop {
@@ -289,7 +289,7 @@
     }
 
     .to-center {
-        height: 55vh;
+        height: 58vh;
     }
 }
 
@@ -321,21 +321,21 @@
     }
 
     .text-bold {
-        font-size: 36px;
-        width: 550px;
+        font-size: 33px;
+        width: 520px;
     }
 
     .text-under {
         font-size: 16px;
-        width: 430px;
+        width: 450px;
     }
 
     .second-line {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
     }
 
     .third-line {
-        margin-bottom: 50px;
+        margin-bottom: 44px;
     }
 
     .button-sign {
@@ -343,7 +343,7 @@
         padding-right: 32px;
         padding-top: 12px;
         padding-bottom: 12px;
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .button-log {
@@ -351,11 +351,11 @@
         padding-right: 46px;
         padding-top: 12px;
         padding-bottom: 12px;
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .last-line {
-        gap: 70px;
+        gap: 62px;
     }
 
     .bottom-image-desktop {
@@ -379,7 +379,7 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 479px) {
+@media (min-width: 320px) and (max-width: 480px) {
     .logo-img {
         height: 30px;
         width: 30px;
@@ -407,29 +407,29 @@
     }
 
     .text-bold {
-        font-size: 24px;
+        font-size: 22px;
         width: 340px;
     }
 
     .text-under {
         font-size: 12px;
-        width: 320px;
+        width: 300px;
     }
 
     .second-line {
-        margin-bottom: 8px;
+        margin-bottom: 10px;
     }
 
     .third-line {
-        margin-bottom: 40px;
+        margin-bottom: 32px;
     }
 
     .button-sign {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 26px;
+        padding-right: 26px;
         padding-top: 12px;
         padding-bottom: 12px;
-        font-size: 24px;
+        font-size: 22px;
         border: 1px solid;
     }
 
@@ -438,12 +438,12 @@
         padding-right: 34px;
         padding-top: 12px;
         padding-bottom: 12px;
-        font-size: 24px;
+        font-size: 22px;
         border: 1px solid;
     }
 
     .last-line {
-        gap: 44px;
+        gap: 42px;
     }
 
     .bottom-image-desktop {
@@ -463,6 +463,6 @@
     }
 
     .to-center {
-        height: 45vh;
+        height: 40vh;
     }
 }

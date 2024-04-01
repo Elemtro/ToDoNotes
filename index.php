@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="styles/first-page/container.css">
     <link rel="stylesheet" href="styles/first-page/main.css">
     <link rel="stylesheet" href="styles/first-page/global.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,7 +32,7 @@
             <div style="display:block;">
                 <div class="second-line">
                     <span class="text-bold" id="existing-text">
-                        Steamline your tasks: your ultimate
+                        Streamline your tasks: your ultimate
                         To-Do list &amp; Notes hub
                     </span>
                 </div>
@@ -46,14 +47,14 @@
                 </div>
 
                 <div class="last-line">
-                    <a href="sign_up/sign_up.php">
-                        <button class="button-sign">
-                            Sign Up
-                        </button>
-                    </a>
                     <a href="log_in/log_in.php">
                         <button class="button-log">
                             Log In
+                        </button>
+                    </a>
+                    <a href="sign_up/sign_up.php">
+                        <button class="button-sign">
+                            Sign Up
                         </button>
                     </a>
                 </div>

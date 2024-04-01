@@ -21,6 +21,13 @@ window.onload = function() {
                 
                 setTimeout(function() {
                     if (note.data.length > 120) {
+                        contentDiv.style.cursor = "pointer";
+                        contentDiv.addEventListener('mouseenter', function() {
+                            contentDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
+                        });
+                        contentDiv.addEventListener('mouseleave', function() {
+                            contentDiv.style.backgroundColor = ''; // Reset background color on mouse leave
+                        });
                         createPopup(contentDiv.innerHTML, note.note_id)
                         contentDiv.addEventListener('click', () => {
                             setupPopup(note.note_id);
