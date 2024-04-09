@@ -28,12 +28,19 @@ window.onload = function() {
                         contentDiv.addEventListener('mouseleave', function() {
                             contentDiv.style.backgroundColor = ''; // Reset background color on mouse leave
                         });
-                        createPopup(contentDiv.innerHTML, note.note_id)
+                        createPopup(contentDiv.innerHTML, note.note_id, note.date)
                         contentDiv.addEventListener('click', () => {
                             setupPopup(note.note_id);
                         });
-                    } else if (contentDiv.scrollHeight > 120) {
-                        createPopup(contentDiv.innerHTML, note.note_id)
+                    } else if (contentDiv.scrollHeight > 100) {
+                        contentDiv.style.cursor = "pointer";
+                        contentDiv.addEventListener('mouseenter', function() {
+                            contentDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
+                        });
+                        contentDiv.addEventListener('mouseleave', function() {
+                            contentDiv.style.backgroundColor = ''; // Reset background color on mouse leave
+                        });
+                        createPopup(contentDiv.innerHTML, note.note_id, note.date)
                         contentDiv.addEventListener('click', () => {
                             setupPopup(note.note_id);
                         });
@@ -53,7 +60,6 @@ window.onload = function() {
                 let date = dateFormatting(note.date)
                 dateDiv.textContent = date;
                 dateDiv.className = 'note-date';
-                //noteDiv.appendChild(dateDiv);
 
                 // Create buttons container
                 let buttonsDiv = document.createElement('div');
@@ -74,7 +80,7 @@ window.onload = function() {
                 deleteButton.textContent = 'Delete';
                 deleteButton.className = 'note-button delete-button';
                 deleteButton.onclick = function() {
-                    // Add functionality for deleting a note here
+                    deleteNote(note.note_id);
                     console.log('Delete button clicked for note ' + note.note_id);
                 };
                 buttonsDiv.appendChild(deleteButton);
@@ -83,9 +89,7 @@ window.onload = function() {
                 bottomContainer.appendChild(dateDiv);
                 bottomContainer.appendChild(buttonsDiv);
 
-
                 // Append buttons container to the note container
-                //noteDiv.appendChild(buttonsDiv);
                 noteDiv.appendChild(bottomContainer);
                 
                 // Append the note container to the notes container
@@ -128,7 +132,7 @@ function dateFormatting(date) {
 }
 
 // Function to create the popup structure
-function createPopup(content, id) {
+function createPopup(content, id, date) {
     // Access popup container
     let popupContainer = document.getElementById('popupsContainer');
 
@@ -151,6 +155,38 @@ function createPopup(content, id) {
     contentDiv.innerHTML = content;
     popupContent.appendChild(contentDiv);
 
+    // Create date
+    let dateDiv = document.createElement('div');
+    let date2 = dateFormatting(date)
+    dateDiv.textContent = date2;
+    dateDiv.className = 'note-date-popup';
+    popupContent.appendChild(dateDiv);
+
+    // Create buttons container
+    let buttonsDiv = document.createElement('div');
+    buttonsDiv.className = 'note-buttons-popup';
+
+    // Create Edit button
+    let editButton = document.createElement('button');
+    editButton.textContent = 'Edit';
+    editButton.className = 'note-button edit-button';
+    editButton.onclick = function() {
+        // Add functionality for editing a note here
+        console.log('Edit button clicked for note ' + note.note_id);
+    };
+    buttonsDiv.appendChild(editButton);
+
+    // Create Delete button
+    let deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.className = 'note-button delete-button';
+    deleteButton.onclick = function() {
+        // Add functionality for deleting a note here
+        console.log('Delete button clicked for note ' + note.note_id);
+    };
+    buttonsDiv.appendChild(deleteButton);
+    popupContent.appendChild(buttonsDiv);
+
     popup.appendChild(popupContent);
     popupContainer.appendChild(popup);
 }
@@ -163,4 +199,10 @@ function setupPopup(id) {
     overlay.addEventListener("click", function() {
         popup.classList.remove("active");
     });
+
+    window.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            popup.classList.remove("active");
+        }
+    })
 }

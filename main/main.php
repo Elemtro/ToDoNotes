@@ -18,6 +18,7 @@ include_once "session_set.php";
 
     <script defer src="addSendAjax.js"></script>
     <script defer src="fetchDisplay.js"></script>
+    <script src="./deleteNoteAjax.js"></script>
 </head>
 
 <body>
