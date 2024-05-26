@@ -131,6 +131,7 @@
     height: auto;
 }
 
+
 .addTaskBtn{
     border: 1.3px solid;
     border-color: #D62C44;
@@ -139,11 +140,11 @@
     border-radius: 8px;
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 32px;
     padding-left: 18px;
     padding-right: 18px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     cursor: pointer;
     transition-duration: 0.15s;
 }
@@ -157,6 +158,15 @@
     opacity: 0.7;
 }
 
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+
+#form {
+    display: none;
+    transition: all 0.3s ease;
+}
 
 #form textarea{
     background-color: #EFF0F3;
@@ -164,8 +174,8 @@
     margin: 0px;
     padding-right: 14px;
     padding-left: 14px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     outline: none;
     resize: none;
     font-size: 18px;
@@ -174,7 +184,7 @@
     border-color: rgb(165, 165, 165);
     font-family: "IBM Plex Sans", sans-serif;
     max-height: 345px;
-    overflow-y: hidden;
+    overflow-y: auto;
     width: 1071px;
 }
 
@@ -283,15 +293,9 @@
     transition: all 0.3s ease;
     border-radius: 8px;
     padding-left: 4px;
-        /* Add padding inside the element */
+    /* Add padding inside the element */
 }
 
-
-/* .note-content:hover { */
-    /* Define hover styles here */
-    /*background-color: rgba(0, 0, 0, 0.1);*/
-    /* Example background color change */
-/*} */
 
 
 .note-date {
@@ -378,10 +382,15 @@
 }
 
 .popup .content {
+    text-align: left;
     font-family: "IBM Plex Sans", sans-serif;
     color: #34374C;
     font-size: 18px;
     word-wrap: break-word;
+    overflow-y: auto;
+    display: -webkit-box;
+    -webkit-line-clamp: 20;
+    -webkit-box-orient: vertical;
 }
 
 .note-date-popup {
